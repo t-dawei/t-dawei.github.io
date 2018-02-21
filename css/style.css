@@ -468,7 +468,7 @@ h5.title-w3 span {
 	display: block;
 	font-size: 15px;
 	position: absolute;
-	left: -16%;
+	left: 50%;
 	top: -70%;
 	width: 100px;
 	text-align: left;
@@ -504,7 +504,14 @@ h5.title-w3 span {
 	letter-spacing: .8px;
 	line-height: 30px;
 }
-
+.quick_link{
+	font-size: 20px;
+	color: #777;
+	letter-spacing: .8px;
+	line-height: 50px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
 .red-w3ls {
 	color: white!important;
 	display: inline-block!important;
@@ -633,12 +640,13 @@ h3.subheading-agileits-w3layouts {
 
 .about-right {
 	padding: 0;
+	/*margin-top: 100px;*/
 	position: relative;
 }
 
 .about-border-w3ls {
 	position: absolute;
-	padding: 24.95em 21em;
+	padding: 20.75em 20em;
 	border: 24px solid #000;
 }
 
@@ -939,7 +947,7 @@ h3.subheading-agileits-w3layouts {
 }
 
 .scrollbar {
-	height: 250px;
+	height: 550px;
 	background: #fff;
 	overflow-y: scroll;
 }
@@ -1394,7 +1402,7 @@ h3.subheading-agileits-w3layouts {
 		padding: 2.5em;
 	}
 	.work_box h5.title-w3 span {
-		left: -5%;
+		left: 10%;
 	}
 	.awards-agileits-w3layouts,
 	.skills-w3layouts {
@@ -1552,6 +1560,7 @@ h3.subheading-agileits-w3layouts {
 		font-size: 23px;
 		letter-spacing: 1px;
 		margin-bottom: 0.3em;
+		margin-left: 20PX;
 	}
 	.w3_agileits_services_grid_agile h3 {
 		font-size: 23px;
@@ -1952,7 +1961,7 @@ h3.subheading-agileits-w3layouts {
 		padding: 2.5em 1em;
 	}
 	.work_box h5.title-w3 span {
-		left: 18%;
+		left: 58%;
 		top: -37%;
 	}
 	.bar_group.group_ident-1 p {
