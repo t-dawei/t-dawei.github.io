@@ -15,6 +15,70 @@ body a {
 	-ms-transition: 0.5s all;
 }
 
+/*魔方start*/
+.stage{
+	perspective: 1000px;
+	width: 15em;
+	height: 15em;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-left: -10em;
+	margin-top: 5em;
+}
+/*立方体*/
+.cube{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transform: rotateX(-20deg) rotateY(-20deg);
+}
+/*立方体每个面的形状*/
+.cube div{
+	background:-webkit-linear-gradient(left,rgba(54,226,248,0.5) 0px,rgba(54,226,248,0.5) 3px,rgba(0,0,0,0) 0px),-webkit-linear-gradient(top,rgba(54,226,248,0.5) 0px,rgba(54,226,248,0.5) 3px,rgba(0,0,0,0) 0px);
+	background-size: 5em 5em;
+	/*网格处理不太懂*/
+	background-color: rgba(0, 0, 0, 0.5);
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	border: 2px solid rgba(54,226,248,0.5);
+	box-shadow: 0 0 5em rgba(0, 128, 0, 0.4);
+}
+/*分别设置六个面*/
+.front{
+	transform: translateZ(10em);
+}
+.back{
+	transform: translateZ(-10em);
+}
+.left{
+	transform: rotateY(-90deg) translateZ(10em);
+}
+.right{
+	transform: rotateY(-90deg) translateZ(-10em);
+}
+.top{
+	transform: rotateX(-90deg) translateZ(-10em);
+}
+.bottom{
+	transform: rotateX(-90deg) translateZ(10em);
+}
+/*定义动画帧*/
+@keyframes spin {
+	from{
+		transform: translateZ(0) rotateX(0) rotateY(0);
+	}to{
+		transform: translateZ(0) rotateX(360deg) rotateY(360deg);
+	}
+}
+/*将动画用于div*/
+.Animation-spin{
+	animation: spin 15s ease-in-out infinite;
+}
+
+/*魔方end*/
 a:hover {
 	text-decoration: none;
 }
